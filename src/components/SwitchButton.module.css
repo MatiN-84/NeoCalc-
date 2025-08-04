@@ -1,0 +1,53 @@
+.button {
+    width: 40px ;
+    height: 18px;
+    background-color: lightgray;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    transition:  0.2s ease-in-out;
+  
+}
+
+
+.section{
+    height: 18px;
+    width: 30%;    
+    position: absolute;
+    opacity: 30%;
+}
+.section1 {
+    
+
+
+   left: 5%;
+}
+.section2 {
+
+    left: 35%;
+}
+.section3 {
+
+    left: 65%;
+}
+.circle1 {
+    left: 5%;
+}
+.circle2 {
+    left: 32%;
+}
+.circle3 {
+    left: 58%;
+    
+}
