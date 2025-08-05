@@ -1,31 +1,49 @@
-.button{
-    grid-column: span 1;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    height: 30px;
-    color:hsl(222, 26%, 31%);
-    font-size: 20px;
-    border-bottom: 2px solid rgb(171, 171, 171);
+.button {
+  grid-column: span 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
 
+  font-size: 20px;
+
+  transition: all 0.2s;
 }
-.reset1{
-    grid-column: span 2;
-    background: hsl(225, 21%, 49%);
-    color: white;
-    font-size: 15px;
-    border-bottom: 2px solid hsla(225, 21%, 38%, 1.00);
+.number1 {
+  color: hsl(222, 26%, 31%);
+  border-bottom: 2px solid rgb(171, 171, 171);
 }
-.equal1{
-    grid-column: span 2;
-    background: hsl(225, 21%, 49%);
-    background-color: hsl(6, 63%, 50%);
-    color: white;
-    border-bottom: 2px solid hsla(6, 61%, 36%, 1.00);
+.number1:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+.reset1 {
+  grid-column: span 2;
+  background: hsl(225, 21%, 49%);
+  color: white;
+  font-size: 15px;
+
+  border-bottom: 2px solid hsla(225, 21%, 38%, 1);
+}
+.reset1:hover {
+  background: hsl(224, 32%, 72%);
+}
+.equal1 {
+  grid-column: span 2;
+  background: hsl(225, 21%, 49%);
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+  border-bottom: 2px solid hsla(6, 61%, 36%, 1);
+}
+.equal1:hover {
+  background: hsl(6, 86%, 66%);
 }
 .del1 {
-    background: hsl(225, 21%, 49%);
-    color: white;
-    font-size: 15px;
-    border-bottom: 2px solid hsla(225, 21%, 38%, 1.00);
+  background: hsl(225, 21%, 49%);
+  color: white;
+  font-size: 15px;
+  border-bottom: 2px solid hsla(225, 21%, 38%, 1);
+  transition: all 0.2s;
+}
+.del1:hover {
+  background: hsl(224, 32%, 72%);
 }
