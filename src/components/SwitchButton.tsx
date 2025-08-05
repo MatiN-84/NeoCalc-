@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "./SwitchButton.module.css";
-function SwitchButton() {
-    const [theme, setTheme] = useState("1");
+function SwitchButton({theme , setTheme}) {
+    
   return (
     <div className={`${styles.switchButton}`}>
 
-      <div>1 2 3</div>
+      <div className={styles.numbers}>{"1   2   3"}</div>
       <div className={styles.button}>
         <div className={`${styles.circle} ${styles['circle' + theme]}`}></div>
         <div className={`${styles.section1} ${styles.section}`} onClick={() => setTheme("1")}></div>

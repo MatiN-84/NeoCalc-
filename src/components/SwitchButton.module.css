@@ -1,15 +1,26 @@
+.switchButton{
+    position: relative;
+}
 .button {
-    width: 40px ;
+    width: 45px ;
     height: 18px;
-    background-color: lightgray;
+    background-color: hsl(223, 31%, 20%);
     border-radius: 50px;
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
 
-}
 
+}
+.numbers{
+    position: absolute;
+    top: -15px;
+    font-size: 10px;
+    color: white;
+    white-space: pre;
+    left: 8px;
+}
 .circle {
     width: 14px;
     height: 14px;
@@ -42,12 +53,19 @@
     left: 65%;
 }
 .circle1 {
-    left: 5%;
+    left: 10%;
 }
 .circle2 {
-    left: 32%;
+    left: 36%;
 }
 .circle3 {
     left: 58%;
     
+}
+
+
+
+/* Theme */
+.circle1{
+    background-color:hsl(6, 63%, 50%);
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-
-function Button({ character, text, setText, type }) {
+import styles from "./Button.module.css"
+function Button({ button, text, setText ,theme }) {
+  const {type , character,style}= button
   const [lastIsOperator, setlastIsOperator] = useState(false);
 
   useEffect(() => {
@@ -47,8 +48,8 @@ function Button({ character, text, setText, type }) {
           break;
       }
     }
-  };
-  return <button onClick={() => handleButtonClick()}>{character}</button>;
-}
+};
+  return <button className={`${styles.button} ${styles[style + theme]}`} onClick={() => handleButtonClick()}>{character}</button>;
 
+}
 export default Button;
