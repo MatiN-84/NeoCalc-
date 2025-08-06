@@ -38,6 +38,9 @@ function Button({ button, text, setText ,theme }) {
           setText(text.slice(0, -1));
           break;
         case "=":
+          if(lastIsOperator){
+            return;
+          }
           try {
             setText(eval(text));
           } catch {
@@ -49,7 +52,7 @@ function Button({ button, text, setText ,theme }) {
       }
     }
 };
-  return <button className={`${styles.button} ${styles[style + theme]}`} onClick={() => handleButtonClick()}>{character}</button>;
+  return <button className={`${styles.button} ${styles[style + theme]} ${lastIsOperator && character==="="?styles["unActive"]:""}`} onClick={() => handleButtonClick()} >{character}</button>;
 
 }
 export default Button;

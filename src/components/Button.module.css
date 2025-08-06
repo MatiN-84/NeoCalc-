@@ -124,3 +124,9 @@ background: hsl(176, 94%, 58%);
   background: hsl(281, 72%, 53%);
 }
 
+.unActive:hover::before,
+.unActive:hover::after {
+  /* استایل دلخواه برای هاور روی before/after */
+  content: "❌";
+
+}
