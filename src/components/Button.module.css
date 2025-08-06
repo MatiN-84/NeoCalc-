@@ -11,6 +11,7 @@
 }
 .number1 {
   border-bottom: 2px solid rgb(171, 171, 171);
+
 }
 .number1:hover {
   background-color: hsl(0, 0%, 100%);
@@ -23,6 +24,14 @@
 .number2:hover {
   background-color: hsl(0, 0%, 100%);
 }
+.number3 {
+  background-color: hsl(268, 47%, 21%);
+  border-bottom: solid 2px hsl(285, 91%, 52%);
+  color:hsl(52, 100%, 62%) ;
+}
+.number3:hover {
+  background-color: hsl(281, 89%, 26%);
+}
 .reset1 {
   grid-column: span 2;
   background: hsl(225, 21%, 49%);
@@ -34,6 +43,7 @@
 .reset1:hover {
   background: hsl(224, 32%, 72%);
 }
+
 .reset2 {
   grid-column: span 2;
   background: hsl(185, 42%, 37%);
@@ -43,6 +53,17 @@
 }
 .reset2:hover {
   background-color: hsl(185, 60%, 61%);
+}
+.reset3 {
+  grid-column: span 2;
+  color: white;
+  font-size: 15px;
+  background-color: hsl(281, 89%, 26%);
+  border-bottom: solid 2px hsl(285, 91%, 52%);
+}
+.reset3:hover{
+  background-color: hsl(281, 72%, 53%);
+
 }
 .equal1 {
   grid-column: span 2;
@@ -61,6 +82,16 @@
 }
 .equal2:hover {
   background: hsl(25, 94%, 55%);
+}
+.equal3{
+  grid-column: span 2;
+  background-color: hsl(176, 100%, 44%);
+  color: black;
+  border-bottom: 2px solid hsl(177, 92%, 70%);
+}
+
+.equal3:hover{
+background: hsl(176, 94%, 58%);
 }
 .del1 {
   background: hsl(225, 21%, 49%);
@@ -81,4 +112,15 @@
 }
 .del2:hover {
   background: hsl(185, 54%, 61%);
+} 
+.del3{
+  background: hsl(281, 89%, 26%);
+  color: white;
+  font-size: 15px;
+  border-bottom: 2px solid hsl(285, 91%, 52%);
+  transition: all 0.2s;
 }
+.del3:hover{
+  background: hsl(281, 72%, 53%);
+}
+
