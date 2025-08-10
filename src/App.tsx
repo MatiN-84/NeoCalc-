@@ -3,9 +3,12 @@ import Button from "./components/Button";
 import buttons from "./constants/buttons.js"
 import SwitchButton from "./components/switchButton.js";
 import styles from "./App.module.css"
+
+type TthemeType = "1"|"2"|"3" 
 function App() {
-  const [theme, setTheme] = useState("1");
-  const [text, setText] = useState("")
+
+  const [theme, setTheme] = useState<TthemeType>("1");
+  const [text, setText] = useState<string>("")
 
   const mainColors = ["hsl(222, 26%, 31%)" , "hsl(0, 0%, 90%)" , "hsl(268, 75%, 9%)"]
   useEffect(()=> {

@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import styles from "./SwitchButton.module.css";
-function SwitchButton({theme , setTheme}) {
+
+interface ISwitchButtons{
+  theme:string,
+  setTheme:React.Dispatch<React.SetStateAction<string>>
+}
+function SwitchButton({theme , setTheme}:ISwitchButtons) {
     
   return (
     <div className={`${styles.switchButton} ${styles["switchButton"+theme]}`}>

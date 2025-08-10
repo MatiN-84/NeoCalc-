@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Button.module.css"
-function Button({ button, text, setText ,theme }) {
-  const {type , character,style}= button
-  const [lastIsOperator, setlastIsOperator] = useState(false);
 
+interface IButtonProps {
+  button:{character:string , type:string ,style:string}
+  theme:string,
+  text:string,
+  setText: React.Dispatch<React.SetStateAction<string>>
+}
+function Button({ button, text, setText ,theme }:IButtonProps) {
+  console.log(button);
+  const {type , character,style}= button
+  const [lastIsOperator, setlastIsOperator] = useState<boolean>(false);
+
+
+  
   useEffect(() => {
     setlastIsOperator(
       text[text.length - 1] === "+" ||
