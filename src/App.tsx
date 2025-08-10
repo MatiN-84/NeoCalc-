@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "./components/Button";
-import buttons from "./constants/buttons.js"
-import SwitchButton from "./components/switchButton.js";
+import buttons from "./constants/buttons.ts"
+import SwitchButton from "./components/switchButton.tsx";
 import styles from "./App.module.css"
 
 type TthemeType = "1"|"2"|"3" 
@@ -22,7 +22,7 @@ function App() {
 
           <div className={styles.calculator}>
       <div className={`${styles.header} ${styles["header"+theme]}`}>
-        <span>calc</span>
+        <span>NEOCalc</span>
         <div className={`${styles.switch} ${styles["switch"+theme]}`} >
           <span>Theme</span>
           <SwitchButton theme={theme} setTheme={setTheme} />

@@ -1,5 +1,5 @@
   
-const buttons=[
+const buttons: {character:string , type:string , style:string}=[
   { character: '7' ,type:"number" ,style:"number" },
   { character: '8' ,type:"number" ,style:"number"},
   { character: '9' ,type:"number" ,style:"number"},

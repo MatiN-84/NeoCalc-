@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import styles from "./SwitchButton.module.css";
 
 interface ISwitchButtons{
