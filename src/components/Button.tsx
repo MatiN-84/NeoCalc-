@@ -8,7 +8,7 @@ interface IButtonProps {
   setText: React.Dispatch<React.SetStateAction<string>>
 }
 function Button({ button, text, setText ,theme }:IButtonProps) {
-  console.log(button);
+
   const {type , character,style}= button
   const [lastIsOperator, setlastIsOperator] = useState<boolean>(false);
 

@@ -1,9 +1,10 @@
 
+import type { TthemeType } from "../constants/types/types";
 import styles from "./SwitchButton.module.css";
 
 interface ISwitchButtons{
-  theme:string,
-  setTheme:React.Dispatch<React.SetStateAction<string>>
+  theme:TthemeType,
+  setTheme: React.Dispatch<React.SetStateAction<TthemeType>>
 }
 function SwitchButton({theme , setTheme}:ISwitchButtons) {
     

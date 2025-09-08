@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Button from "./components/Button";
 import buttons from "./constants/buttons.ts"
-import SwitchButton from "./components/switchButton.tsx";
+import SwitchButton from "./components/SwitchButton.tsx";
 import styles from "./App.module.css"
+import type { ButtonDataT, TthemeType } from "./constants/types/types.ts";
 
-type TthemeType = "1"|"2"|"3" 
 function App() {
 
   const [theme, setTheme] = useState<TthemeType>("1");
@@ -13,7 +13,7 @@ function App() {
   const mainColors = ["hsl(222, 26%, 31%)" , "hsl(0, 0%, 90%)" , "hsl(268, 75%, 9%)"]
   useEffect(()=> {
     
-    document.body.style.backgroundColor = mainColors[theme-1];
+    document.body.style.backgroundColor = mainColors[+theme-1];
 
 
   }, [theme])
@@ -35,7 +35,7 @@ function App() {
       </div>
 
       <div className={`${styles.buttonContainer} ${styles["buttonContainer"+theme]}`}  >
-        {buttons.map((button) => (
+        {buttons.map((button:ButtonDataT) => (
           <Button theme={theme} key={button.character} button={button} text={text} setText={setText}  />
         ))}
       </div>
